@@ -12,9 +12,8 @@ export const Container = styled.div`
   flex-direction: column;
   background-color: ${Palette.firstColor};
   padding: 2rem 3.5rem;
-  height: 100vh;
-  //width: 100%;
-  max-width: ${ScreenSizes.mobile};
+  max-width: ${ScreenSizes.tablet};
+  box-shadow: 0 0 50px ${Palette.secondColor}
 `
 export const Title = styled.h1`
   font-size: 2rem;

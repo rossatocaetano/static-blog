@@ -44,7 +44,7 @@ export const Button = styled.a`
   max-width: fit-content;
   padding: 1rem 2rem;
   margin: 1rem 0;
-  background-color: ${Palette.fifthColor};
+  background-color: ${Palette.thirdColor};
   border-radius: 4px;
   color: ${Palette.firstColor};
   font-weight: bold;
@@ -54,6 +54,6 @@ export const Button = styled.a`
   cursor: pointer;
 
   &:hover{
-    background-color: ${Palette.thirdColor};
+    background-color: ${Palette.fifthColor};
   }
 `

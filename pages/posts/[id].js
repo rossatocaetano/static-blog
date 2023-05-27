@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 import data from '../../data.json';
+import config from '../../config.json'
 import NextLink from 'next/link'
 import { Container, Title, SubTitle, Background, Text, Button } from '@/styles/sharedstyles';
 
@@ -64,7 +65,7 @@ export default function PostByIdScreen(props) {
         <Text>{post.content}</Text>
         <Button>
         <NextLink href={'/'} style={{ textDecoration: 'none', color: 'inherit'}} passHref>
-          Voltar para Home
+          {config.defaultButton}
         </NextLink>
         </Button>
         

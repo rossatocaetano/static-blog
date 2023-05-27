@@ -28,6 +28,7 @@ export const CardId = styled.li`
   width: 4.5rem;
   height: 4.5rem;
   border-radius: 50%;
+  box-shadow: 1px 1px 1px .5px ${Palette.secondColor};
   background-color: ${Palette.fourthColor};
 `
 

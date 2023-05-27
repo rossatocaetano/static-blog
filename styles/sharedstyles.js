@@ -37,7 +37,7 @@ export const Text = styled.p`
   line-height: 1.75rem;
 `
 
-export const Button = styled.a`
+export const Button = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -46,6 +46,7 @@ export const Button = styled.a`
   margin: 1rem 0;
   background-color: ${Palette.thirdColor};
   border-radius: 4px;
+  border: none;
   color: ${Palette.firstColor};
   font-weight: bold;
   text-decoration: none;

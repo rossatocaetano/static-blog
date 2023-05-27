@@ -11,6 +11,10 @@ export const Card = styled.ul`
 
   &:hover {
     padding: 0 1rem;
+
+    li:first-child {
+    background-color:${Palette.fifthColor};
+    }
   }
 `
 
@@ -24,7 +28,7 @@ export const CardId = styled.li`
   width: 4.5rem;
   height: 4.5rem;
   border-radius: 50%;
-  background-color: ${Palette.fourthColor}; 
+  background-color: ${Palette.fourthColor};
 `
 
 export const CardText = styled.li`
@@ -38,6 +42,7 @@ export const CardText = styled.li`
 export const Item = styled.p`
   display: flex;
   color: ${Palette.secondColor};
+  margin: .5rem;
 
   & span{
     font-weight: bold;

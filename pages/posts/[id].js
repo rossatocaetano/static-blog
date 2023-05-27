@@ -1,5 +1,7 @@
 import { useRouter } from 'next/router';
 import data from '../../data.json';
+import NextLink from 'next/link'
+import { Container, Title, SubTitle, Background, Text, Button } from '@/styles/sharedstyles';
 
 // Função responsável por determinar quais páginas estáticas devem ser geradas durante o build
 export async function getStaticPaths() {
@@ -54,12 +56,15 @@ export default function PostByIdScreen(props) {
   }
 
   return (
-    <>
-      <h1>{post.title}</h1>
-      <h2>{post.author}</h2>
-      <p>{post.date}</p>
-      <p>{post.content}</p>
-    </>
+    <Background>
+      <Container>
+        <Title>{post.title}</Title>
+        <SubTitle>{post.author}</SubTitle>
+        <SubTitle>{post.date}</SubTitle>
+        <Text>{post.content}</Text>
+        <NextLink href={'/'} style={{ textDecoration: 'none'}}><Button>Voltar para Home</Button></NextLink>
+      </Container>
+    </Background>
   );
 }
 

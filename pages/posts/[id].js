@@ -63,12 +63,11 @@ export default function PostByIdScreen(props) {
         <SubTitle>{post.author}</SubTitle>
         <SubTitle>{post.date}</SubTitle>
         <Text>{post.content}</Text>
-        <Button>
         <NextLink href={'/'} style={{ textDecoration: 'none', color: 'inherit'}} passHref>
+          <Button>
           {config.defaultButton}
-        </NextLink>
-        </Button>
-        
+          </Button>
+        </NextLink>        
       </Container>
     </Background>
   );

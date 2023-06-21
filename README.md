@@ -1,38 +1,67 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Listar Usuários
 
-## Getting Started
+## Descrição do projeto
 
-First, run the development server:
+A aplicação foi criada com o objetivo de listar postagens e suas informações, como título, autor e data, em uma interface web. Ela foi desenvolvida utilizando as tecnologias Next.js e Styled Components.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+Os dados consumidos pela aplicação estão dispostos em um arquivo json no diretório raíz da própria aplicação.
+
+O conceito do layout adotado é minimalista, responsivo e foi desenvolvido seguindo o conceito Mobile First.
+
+
+### Processo de desenvolvimento
+
+Este projeto foi realizado para testar o consumo de um arquivo json disposto no diretório da aplicação. 
+
+Inserir as informações e textos estáticos do site em arquivos json isola as responsabilidades dos componentes, facilitado as manutenções futuras e melhorando a legibilidade do código.
+
+## Deploy da aplicação
+
+O Deploy da Aplicação foi realizado na plataforma Vercel e pode ser acessado no link https://static-blog-self.vercel.app/.
+
+
+## Pré-requisitos
+Para rodar a aplicação em um ambiente de desenvolvimento local, você precisa ter instalado em sua máquina:
+
+:books: [Node](https://nodejs.org/en/download/)
+
+:books: [Yarn](https://yarnpkg.com/lang/pt-BR/docs/install/)
+
+
+## Tecnologias utilizadas
+Esta aplicação foi desenvolvida utilizando as seguintes tecnologias:
+
+:hammer_and_wrench: Next.js
+
+:hammer_and_wrench: Styled Components
+
+
+## Como rodar a aplicação
+
+1. No terminal, clone o projeto:
+
+```
+$ git clone https://github.com/rossatocaetano/static-blog.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Acesse a pasta do projeto:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```
+$ cd static-blog
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+3. Instale as dependências do projeto utilizando o gerenciador de pacotes Yarn:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```
+$ yarn install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
+4. Inicie o servidor de desenvolvimento:
 
-To learn more about Next.js, take a look at the following resources:
+```
+$ yarn dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+5. Acesse a aplicação em seu navegador em http://localhost:3000
